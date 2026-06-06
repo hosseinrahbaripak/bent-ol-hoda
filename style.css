@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9edf2 100%);
+    color: #1a2a3a;
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* ========== نوبار ========== */
+.navbar {
+    background: rgba(10, 25, 35, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.logo i {
+    color: #ffd700;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: 500;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+    padding: 8px 0;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: #ffd700;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffd700;
+}
+
+/* ========== منوی کشویی ========== */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: rgba(20, 40, 50, 0.98);
+    min-width: 250px;
+    border-radius: 16px;
+    padding: 12px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: 0.3s;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,215,0,0.2);
+    z-index: 100;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-content a {
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-decoration: none;
+    color: #e0e0e0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.dropdown-content a small {
+    font-size: 0.7rem;
+    color: #aaa;
+}
+
+.dropdown-content a:hover {
+    background: rgba(255,215,0,0.15);
+    color: #ffd700;
+}
+
+.dropdown-content a:hover small {
+    color: #ffd700;
+}
+
+/* ========== بخش Hero ========== */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65));
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+.hero-btn {
+    margin-top: 30px;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #ffd700, #ffb347);
+    border: none;
+    border-radius: 50px;
+    color: #1a2a3a;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ========== بخش‌ها ========== */
+.section {
+    margin: 70px 0;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.section-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #1e5a7a, #0d2b3e);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #ffd700;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.section-icon:hover {
+    transform: scale(1.05);
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1a3a4a;
+}
+
+.section-line {
+    flex: 1;
+    height: 3px;
+    background: linear-gradient(90deg, #ffd700, transparent);
+}
+
+/* ========== گرید مقالات ========== */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.article-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.article-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.12);
+}
+
+.article-img {
+    height: 270px;
+    overflow: hidden;
+}
+
+.article-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.article-card:hover .article-img img {
+    transform: scale(1.08);
+}
+
+.article-content {
+    padding: 20px;
+}
+
+.article-content h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1e4a6b;
+}
+
+.article-content p {
+    font-size: 0.85rem;
+    color: #5a6e7a;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    font-size: 0.8rem;
+    color: #1e5a7a;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s;
+}
+
+.read-more:hover {
+    color: #ffd700;
+    gap: 10px;
+}
+
+/* ========== درباره ما ========== */
+.about-section {
+    background: linear-gradient(135deg, #ffffff, #f0f4f8);
+    border-radius: 40px;
+    padding: 50px;
+    margin: 60px 0;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    color: #1e4a6b;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    max-width: 800px;
+    margin: 0 auto 15px;
+    color: #3a4e62;
+}
+
+.about-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 35px;
+}
+
+.about-stats div {
+    text-align: center;
+}
+
+.about-stats span {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1e5a7a;
+}
+
+.about-stats small {
+    font-size: 0.8rem;
+    color: #5a6e7a;
+}
+
+/* ========== help ========== */
+.help-section {
+    background: linear-gradient(135deg, #1a3a4a, #0d2b3e);
+    border-radius: 35px;
+    padding: 50px;
+    margin: 50px 0 70px;
+}
+
+.help-section h2 {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 35px;
+    font-size: 1.6rem;
+}
+
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+}
+
+.help-item {
+    background: rgba(255,255,255,0.1);
+    padding: 15px 20px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.help-item:hover {
+    background: #ffd700;
+    color: #1a2a3a;
+    transform: scale(1.02);
+}
+
+/* ========== فوتر ========== */
+.footer {
+    background: #0a1922;
+    color: #8aa0aa;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social {
+    display: flex;
+    gap: 18px;
+}
+
+.social a {
+    color: #8aa0aa;
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #ffd700;
+    transform: translateY(-3px);
+}
+
+/* ========== ریسپانسیو ========== */
+@media (max-width: 1100px) {
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.3rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .about-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer .container {
+        flex-direction: column;
+    }
+    
+    .dropdown-content {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        background: rgba(20, 40, 50, 0.95);
+        box-shadow: none;
+        margin-top: 10px;
+        display: none;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+.nav-links a i {
+    width: 20px;
+    text-align: center;
+}

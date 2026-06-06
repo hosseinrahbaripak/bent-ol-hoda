@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دبیرستان شهیده بنت الهدی صدر</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container nav-inner">
+        <div class="logo">
+            <i class="fas fa-graduation-cap"></i>
+            <span>بنت الهدی صدر</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">
+                <i class="fas fa-home"></i>
+                <span>خانه</span>
+            </a>
+            
+            <div class="dropdown">
+                <a href="#activities" class="dropbtn">
+                    <i class="fas fa-tasks"></i>
+                    <span>فعالیت‌ها</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="#parvareshi">
+                        <i class="fas fa-seedling"></i>
+                        فعالیت‌های پرورشی
+                        <small>جشنواره‌ها، اردوها</small>
+                    </a>
+                    <a href="#elmi">
+                        <i class="fas fa-microscope"></i>
+                        فعالیت‌های علمی
+                        <small>المپیاد، پژوهش</small>
+                    </a>
+                    <a href="#farhangi">
+                        <i class="fas fa-music"></i>
+                        فعالیت‌های فرهنگی
+                        <small>هنر، کتاب، سرود</small>
+                        
+                    </a>
+                    <a href="#omrani">
+                        <i class="fas fa-hard-hat"></i>
+                        فعالیت‌های عمرانی
+                        <small>معماری، ماکت</small>
+                    </a>
+                </div>
+            </div>
+            <a href="#omrani">
+                <i class="fas fa-building"></i>
+                 <span>امکانات</span>
+            </a>
+            <a href="#about">
+                <i class="fas fa-info-circle"></i>
+                <span>درباره ما</span>
+            </a>
+            <a href="#help">
+                <i class="fas fa-headset"></i>
+                <span>help</span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<section id="home" class="hero">
+    <img class="hero-bg" src="images/school-bg.jpg.jpg" alt="دبیرستان بنت الهدی صدر" onerror="this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'">
+    <div class="hero-content">
+        <h1>دبیرستان شبانه روزی</h1>
+        <h2>شهیده بنت الهدی صدر</h2>
+        <p>علم • ایمان • تلاش</p>
+        <button class="hero-btn" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+            بیشتر بدانید <i class="fas fa-arrow-left"></i>
+        </button>
+    </div>
+</section>
+
+<main class="container">
+    <!-- بخش فعالیت‌های پرورشی -->
+    <section id="parvareshi" class="section">
+        <div class="section-header">
+            <div class="section-icon"><i class="fas fa-seedling"></i></div>
+            <h2 class="section-title">فعالیت‌های پرورشی</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="article-img"><img src="https://picsum.photos/id/20/400/250" alt="جشنواره"></div>
+                <div class="article-content">
+                    <h3>جشنواره‌های فرهنگی</h3>
+                    <p>جشنواره قرآن، نهج‌البلاغه و احکام با حضور دانش‌آموزان برتر</p>
+                    <span class="read-more">ادامه مطلب <i class="fas fa-arrow-left"></i></span>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="article-img"><img src="images/ordoo.jpg" alt="اردو"></div>
+                <div class="article-content"
+                    <h3>اردوهای تربیتی</h3>
+                    <p>اردوهای تفریحی و مهارتی در فصول مختلف سال</p>
+                    <span class="read-more">ادامه مطلب <i class="fas fa-arrow-left"></i></span>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="article-img"><img src="images/bahmanmah.jpg" alt="مشاوره"></div>
+                <div class="article-content">
+                    <h3> روز دانش‌آموز </h3>
+                    <p> برگزاری جشن روز ۱۳ آبان ؛روز دانش‌آموز و اهدای هدایا به دانش‌آموزان مدرسه </p>
+                    <span class="read-more">ادامه مطلب <i class="fas fa-arrow-left"></i></span>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="article-img"><img src="images/۲۲.jpg" alt="مسابقات"></div>
+                <div class="article-content">
+                    <h3>جشن  انقلاب </h3>
+                    <p>  برگزاری جشن انقلاب و اهدای جوایز به نفرات برتر</p>
+                    <span class="read-more">ادامه مطلب <i class="fas fa-arrow-left"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش فعالیت‌های علمی -->
+    <section id="elmi" class="section">
+        <div class="section-header">
+            <div class="section-icon"><i class="fas fa-microscope"></i></div>
+            <h2 class="section-title">فعالیت‌های علمی</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="article-img"><img src="images/azmayeshgah.jpg" alt="آزمایشگاه"></div>
+                <div class="article-content">
+                    <h3>آزمایشگاه علوم</h3>
+                    <p>فعالیت‌های عملی شیمی، فیزیک و زیست‌شناسی</p>
+                    <span class="read-more">ادامه مطلب <i class="fas fa-arrow-left"></i></span>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="article-img"><img src="https://picsum.photos/id/1/400/250" alt="المپیاد"></div>
+                <div class="article-content">
+                    <h3>المپیادهای علمی</h3>
+                    <p>آمادگی برای المپیادهای ریاضی، زیست و کامپیوتر</p>
+                    <span class="read-more">ادامه مطلب <i class="fas fa-arrow-left"></i></span>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="article-img"><img src="images/dastavard.jpg" alt="پژوهش"></div>
+                <div class="article-content">
+                    <h3>هفته پژوهش</h3>
+                    <p>نمایشگاه دستاوردهای پژوهشی دانش‌آموزان</p>
+                    <span class="read-more">ادامه مطلب <i class="fas fa-arrow-left"></i></span>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="article-img"><img src="https://picsum.photos/id/3/400/250" alt="کلاس"></div>
+                <div class="article-content">
+                    <h3>کلاس‌های تقویتی</h3>
+                    <p>دروس تخصصی و آمادگی کنکور سراسری</p>
+                    <span class="read-more">ادامه مطلب <i class="fas fa-arrow-left"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش فعالیت‌های فرهنگی -->
+    <section id="farhangi" class="section">
+        <div class="section-header">
+            <div class="section-icon"><i class="fas fa-music"></i></div>
+            <h2 class="section-title">فعالیت‌های فرهنگی</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="article-img"><img src="images/atefeh.jpg" alt="هنر"></div>
+                <div class="article-content">
+                    <h3>جشن عاطفه ها</h3>
+                    <p>جمع آوری کمک های دانش آموزی  برای کودکان بی بضاعت</p>
+                    <span class="read-more">ادامه مطلب <i class="fas fa-arrow-left"></i></span>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="article-img"><img src="images/psaratan.jpg" alt="کتاب"></div>
+                <div class="article-content">
+                    <h3>کارگاه پیشگیری از سرطان  </h3>
+                    <p>آموزش مسائل پیشگری از مبتلا شدن به سرطان</p>
+                    <span class="read-more">ادامه مطلب <i class="fas fa-arrow-left"></i></span>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="article-img"><img src="images/sorood.jpg" alt="سرود"></div>
+                <div class="article-content">
+                    <h3>گروه سرود</h3>
+                    <p>اجرا در مناسبت‌های ملی و مذهبی</p>
+                    <span class="read-more">ادامه مطلب <i class="fas fa-arrow-left"></i></span>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="article-img"><img src="https://picsum.photos/id/18/400/250" alt="فیلم"></div>
+                <div class="article-content">
+                    <h3>کارگاه فیلمسازی</h3>
+                    <p>آموزش ساخت فیلم‌های کوتاه و مستند</p>
+                    <span class="read-more">ادامه مطلب <i class="fas fa-arrow-left"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش فعالیت‌های عمرانی -->
+    <section id="omrani" class="section">
+        <div class="section-header">
+            <div class="section-icon"><i class="fas fa-hard-hat"></i></div>
+            <h2 class="section-title">فعالیت‌های عمرانی و معماری</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="article-img"><img src="https://picsum.photos/id/104/400/250" alt="بازدید"></div>
+                <div class="article-content">
+                    <h3>بازدید از پروژه‌ها</h3>
+                    <p>بازدید از ساختمان‌های در حال ساخت و پروژه‌های عمرانی</p>
+                    <span class="read-more">ادامه مطلب <i class="fas fa-arrow-left"></i></span>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="article-img"><img src="https://picsum.photos/id/106/400/250" alt="طراحی"></div>
+                <div class="article-content">
+                    <h3>طراحی و نقشه‌کشی</h3>
+                    <p>آموزش نرم‌افزارهای معماری (اتوکد، رویت)</p>
+                    <span class="read-more">ادامه مطلب <i class="fas fa-arrow-left"></i></span>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="article-img"><img src="https://picsum.photos/id/107/400/250" alt="معماری سبز"></div>
+                <div class="article-content">
+                    <h3>معماری پایدار</h3>
+                    <p>کارگاه معماری سبز و ساختمان‌های دوستدار محیط زیست</p>
+                    <span class="read-more">ادامه مطلب <i class="fas fa-arrow-left"></i></span>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="article-img"><img src="https://picsum.photos/id/108/400/250" alt="ماکت"></div>
+                <div class="article-content">
+                    <h3>ماکت‌سازی</h3>
+                    <p>ساخت ماکت‌های معماری و المان‌های شهری</p>
+                    <span class="read-more">ادامه مطلب <i class="fas fa-arrow-left"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش درباره ما -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2><i class="fas fa-school"></i> درباره ما</h2>
+            <p>دبیرستان شبانه روزی شهیده بنت الهدی صدر با بهره‌گیری از کادر مجرب و امکانات مدرن، محیطی امن و پویا برای رشد علمی، فرهنگی و تربیتی دانش‌آموزان فراهم کرده است.</p>
+            <p>هدف ما پرورش نسلی متعهد، متخصص و خلاق در مسیر پیشرفت ایران عزیزمان است.</p>
+            <div class="about-stats">
+                <div><span>+۳۰۰</span><small>دانش‌آموز</small></div>
+                <div><span>+۲۰</span><small>کادر آموزشی</small></div>
+                <div><span>+۲۵</span><small>فعالیت سالانه</small></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش help -->
+    <section id="help" class="help-section">
+        <h2><i class="fas fa-life-ring"></i> مرکز راهنمایی و امکانات</h2>
+        <div class="help-grid">
+            <div class="help-item"><i class="fas fa-chalkboard-user"></i><span>مشاوره تحصیلی</span></div>
+            <div class="help-item"><i class="fas fa-robot"></i><span>پشتیبانی آنلاین</span></div>
+            <div class="help-item"><i class="fas fa-certificate"></i><span>گواهینامه معتبر</span></div>
+            <div class="help-item"><i class="fas fa-database"></i><span>منابع آموزشی رایگان</span></div>
+            <div class="help-item"><i class="fas fa-calendar-alt"></i><span>برنامه هفتگی</span></div>
+            <div class="help-item"><i class="fas fa-comments"></i><span>مشاوره تلفنی</span></div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© ۱۴۰۵ - دبیرستان شبانه روزی شهیده بنت الهدی صدر | تمامی حقوق محفوظ است</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
